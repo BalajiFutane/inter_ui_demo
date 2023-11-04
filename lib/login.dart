@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intershala/main.dart';
 
 
 
@@ -132,7 +133,12 @@ class login extends StatelessWidget {
                     height: 40,
                     // padding: EdgeInsets.only(left: 50),
                     margin: EdgeInsets.only(left: 240),
-                    child: ElevatedButton(onPressed: (){},
+                    child: ElevatedButton(onPressed: (){
+
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>MyHomePage(),));
+
+
+                    },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.cyan,
                         shape: RoundedRectangleBorder(

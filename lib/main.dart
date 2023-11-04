@@ -13,21 +13,17 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
-
-
-class ExpandableField extends StatefulWidget {
+class Clickebal_container extends StatefulWidget {
   final String heading;
   final IconData iconData;
 
-  ExpandableField({required this.heading, required this.iconData});
+  Clickebal_container({required this.heading, required this.iconData});
 
   @override
-  _ExpandableFieldState createState() => _ExpandableFieldState();
+  _Clickebal_containerState createState() => _Clickebal_containerState();
 }
 
-class _ExpandableFieldState extends State<ExpandableField> {
+class _Clickebal_containerState extends State<Clickebal_container> {
   bool _isExpanded = false;
 
   void _toggleExpansion() {
@@ -107,11 +103,11 @@ class MyHomePage extends StatelessWidget {
               children: <Widget>[
 
 
-                ExpandableField(heading: 'Personal', iconData: Icons.person),
+                Clickebal_container(heading: 'Personal', iconData: Icons.person),
                 const SizedBox(height: 70),
-                ExpandableField(heading: 'Business', iconData: Icons.business_center),
+                Clickebal_container(heading: 'Business', iconData: Icons.business_center),
                 const SizedBox(height: 70),
-                ExpandableField(heading: 'Merchant', iconData: Icons.woo_commerce_outlined),
+                Clickebal_container(heading: 'Merchant', iconData: Icons.woo_commerce_outlined),
               ],
             ),
           ),
